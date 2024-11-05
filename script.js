@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         else
         {
-            fetch(`home.html`)
+            fetch(`Home.html`)
             .then(response => response.text())
             .then(html => {
                 document.getElementById('loaded_area').innerHTML = html;
