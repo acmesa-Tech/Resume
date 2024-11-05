@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Function to load content from HTML file
     function loadContent(targetId) {
         if (targetId !== 'resume') {
-            fetch(`https://acmesa-tech.github.io/Resume/${targetId}.html`)
+            fetch(`${targetId}.html`)
                 .then(response => response.text())
                 .then(html => {
                     document.getElementById('loaded_area').innerHTML = html;
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         else
         {
-            fetch(`https://acmesa-tech.github.io/Resume/home.html`)
+            fetch(`home.html`)
             .then(response => response.text())
             .then(html => {
                 document.getElementById('loaded_area').innerHTML = html;
