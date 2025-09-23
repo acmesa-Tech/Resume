@@ -74,22 +74,13 @@ section {
 }
 
 .education li {
-    border-left: 5px solid #ACD6gg; /* Granny Smith Apple */
+    border-left: 5px solid #ACD66A; /* Granny Smith Apple */
     padding-left: 15px;
 }
 
 .experience li {
-    border-left: 5px solid #3A80E; /* Bleu De France */
+    border-left: 5px solid #3A80E5; /* Bleu De France */
     padding-left: 15px;
-}
-
-.skills li {
-    display: inline-block;
-    background-color: #15ABAB; /* Light Sea Green */
-    color: white;
-    padding: 8px 15px;
-    margin: 5px;
-    border-radius: 3px;
 }
 
 footer {
@@ -102,4 +93,30 @@ footer {
     display: flex;
     flex-direction: column; /* Align items vertically */
     align-items: center; /* Center horizontally */
+}
+
+/* Skills section */
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+    columns: 2;
+    column-gap: 40px;
+}
+
+.skills ul li {
+    background-color: #15ABAB;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.skills ul li:hover {
+    background-color: #004b8d;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.skills ul li:nth-child(odd) {
+    background-color: #cce0ff;
 }
